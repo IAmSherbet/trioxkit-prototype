@@ -1,0 +1,239 @@
+.container {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex-direction: column;
+}
+
+
+/*------ Buttons ------*/
+
+.button {
+  text-align: center;
+  padding: 18px 54px 18px 54px;
+  border-radius: 500px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: 0px;
+  line-height: 16px;
+}
+
+.primary-button {
+  background-color: #00868C;
+  color: #ffffff;
+  transition-duration: 0.3s;
+}
+
+.primary-button:hover {
+  background-color: #006266;
+}
+
+.secondary-button {
+  padding: 15px 51px 15px 51px;
+  border: 3px solid #00868C;
+  transition-duration: 0.2s;
+  color: #00868C;
+  background-color: rgba(255,255,255,0);
+}
+
+.secondary-button:hover {
+  background-color: #006266;
+  border-color: #006266;
+  color: #ffffff;
+}
+
+/*------ Cards ------*/
+
+.card {
+  position: relative;
+  margin: 0px 12px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+  transition-timing-function: ease-out;
+  transition-duration: .2s;
+  z-index: 0;
+}
+
+.card-header, .card-title, .card-text, .card-actions {
+  padding: 18px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+}
+
+.card-header-text {
+  flex-grow: 1;
+}
+
+.card-header-icon {
+  width: 24px;
+  color: rgba(0,0,0,0.12);
+}
+
+.card-wrapper:hover .clickable-card {
+  box-shadow: 0px 14px 32px rgba(0,0,0,0.3);
+  transform: translateY(-5px);
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.02);
+}
+
+.card p {
+  margin: 0px;
+}
+
+.card-header p:last-of-type {
+  color: rgba(0,0,0,0.54);
+}
+
+.card-title p {
+  color: rgba(0,0,0,0.54);
+}
+
+.divider {
+  height: 1px;
+  margin: 0px 18px;
+  background-color: rgba(0,0,0,0.12);
+}
+
+/*------ Selectable cards ------*/
+
+.select-tick {
+  position: relative;
+  opacity: 0;
+  padding: 6px;
+  width: 24px;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+  border-radius: 100px;
+  margin-bottom: -18px;
+  transition-duration: .2s;
+  transition-timing-function: ease-out;
+  margin-top: -18px;
+  cursor: pointer;
+}
+
+.card-wrapper:hover .select-tick {
+  opacity: 1;
+}
+
+.selected-tick {
+  position: relative;
+  padding: 6px;
+  width: 24px;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+  border-radius: 100px;
+  margin-bottom: -18px;
+  transition-duration: .2s;
+  transition-timing-function: ease-out;
+  margin-top: -18px;
+  color: white;
+  background-color: #00868C;
+}
+
+.selected-card {
+  border: 4px solid #00868C;
+  box-shadow: none;
+}
+
+/*------ Typography ------*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+
+h1, h2, h3, h4, h5, h6, .h7, .h8, .h9, .h10, .h11, .h12 {
+  font-family: 'Roboto Slab', serif;
+  line-height: 1.5em;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: rgba(0,0,0,0.87);
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5em;
+}
+
+* {
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 8em;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 2.57em;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 2.07em;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 1.71em;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 1.42em;
+  font-weight: bold;
+}
+
+.h7 {
+  font-size: 1.14em;
+  font-weight: bold;
+}
+
+.h8 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.h9 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.h10 {
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+.h11 {
+  font-size: 0.85em;
+  font-weight: normal;
+}
+
+.h12 {
+  font-size: 0.8em;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+}
